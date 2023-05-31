@@ -1,0 +1,36 @@
+
+.duties-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -30px;
+    margin-top: -30px;
+    padding-inline-start: 0;
+  }
+  
+  .duties-list-item {
+    margin-right: 30px;
+    margin-top: 30px;
+    flex-basis: calc((100% - 90px) / 3);
+  }
+  
+  .duties-img-thumb {
+    position: relative;
+  }
+  
+  .duties-text {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    left: 0;
+    width: 370px;
+    height: 70px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.15;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--light-color);
+    background: rgba(47, 48, 58, 0.8);
+  }

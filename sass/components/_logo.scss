@@ -1,0 +1,45 @@
+
+.web-logo {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--accent-color);
+  }
+  
+  .studio-logo {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: #000000;
+  }
+
+  
+.logo-top {
+    margin-right: 92px;
+  }
+  
+  .logo-bottom {
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+  
+  
+  .studio-logo-footer {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--light-color);
+  }
+
+  .logo-footer {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    width: fit-content;
+  }
