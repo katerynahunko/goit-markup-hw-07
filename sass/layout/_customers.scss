@@ -1,14 +1,12 @@
 
 .customers-list {
-    display: flex;
-    align-items: center;
+  @extend %align;
     justify-content: center;
     padding: 0;
   }
   
-  .customers-list-item-link {
-    display: flex;
-    align-items: center;
+  .customers-list__link {
+    @extend %align;
     justify-content: center;
     fill: #afb1b8;
     border: 1px solid #afb1b8;
@@ -17,15 +15,15 @@
     height: 92px;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
       border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+      &:hover,
+      &:focus {
+        fill: var(--accent-color);
+        border: 1px solid var(--accent-color);
+      }
   }
   
-  .customers-list-item-link:hover,
-  .customers-list-item-link:focus {
-    fill: var(--accent-color);
-    border: 1px solid var(--accent-color);
-  }
-  
-  .customers-list-item:not(:last-child) {
+  .customers-list__item:not(:last-child) {
     margin-right: 30px;
   }
   

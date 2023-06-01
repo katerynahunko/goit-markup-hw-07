@@ -11,39 +11,33 @@
     padding-left: 0;
   }
   
-  .features-list-item-icon {
-    display: flex;
-    align-items: center;
+  .features-list__icon {
+    @extend %align;
   }
   
-  .features-list-item-container {
+  .features-list__container {
     width: 270px;
     height: 120px;
-    display: flex;
-    align-items: center;
+    @extend %align;
     justify-content: center;
     background-color: #f5f4fa;
     margin-bottom: 30px;
   }
   
-  .features-list-item {
+  .features-list__item {
     margin-right: 30px;
     margin-top: 30px;
     flex-basis: calc((100% - 120px) / 4);
   }
   
-  .features-list-item-title {
+  .features-list__title {
     font-weight: 700;
-    font-size: 14px;
-    line-height: 1.15;
-    letter-spacing: 0.03em;
+    @include font (14px, 1.15, 0.03em);
     text-transform: uppercase;
     margin-bottom: 10px;
   }
   
-  .features-list-item-dscr {
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
+  .features-list__dscr {
+    @include font (14px, 1.71, 0.03em);
     color: var(--text-color);
   }

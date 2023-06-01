@@ -12,7 +12,7 @@
     padding-inline-start: 0;
   }
   
-  .team-list-member {
+  .team-list__member {
     margin-right: 30px;
     margin-top: 30px;
     flex-basis: calc((100% - 120px) / 4);
@@ -27,19 +27,15 @@
     padding-bottom: 32px;
   }
   
-  .team-list-member-name {
+  .team-list__name {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 1.19;
+    @include font (16px, 1.19, 0.03em);
     text-align: center;
-    letter-spacing: 0.03em;
     margin-bottom: 10px;
   }
   
-  .team-list-member-job {
-    font-size: 16px;
-    line-height: 1.19;
+  .team-list__job {
+    @include font (16px, 1.19, 0.03em);
     text-align: center;
-    letter-spacing: 0.03em;
     color: var(--text-color);
   }
